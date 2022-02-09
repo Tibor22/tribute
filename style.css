@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgb(230, 100, 100);
+}
+
+ul {
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin-left: 2rem;
+  list-style-type: none;
+}
+
+li a {
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.showcase {
+  display: flex;
+  position: relative;
+  height: 70vh;
+}
+.img {
+  order: 1;
+  flex: 1;
+  background-position: center;
+  height: 100%;
+  background-size: cover;
+  background-image: url(" https://www.rollingstone.com/wp-content/uploads/2020/01/22I-Shot-the-Sheriff22-%E2%80%94-Burnin-1973.jpg?w=800");
+}
+
+.description {
+  flex-basis: 35%;
+  order: 0;
+  background-color: rgb(235, 217, 160);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.description h1 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  color: #fff;
+  z-index: 2;
+}
+.description p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  height: 70vh;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(121, 109, 95, 0.363);
+}
+.biography {
+  display: flex;
+}
+.biography__img {
+  width: 50%;
+  height: 50%;
+}
+.biography__img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.biography__article {
+  width: 50%;
+  background-color: rgba(245, 220, 139, 0.794);
+  padding: 3% 7%;
+}
+.biography__article h2 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(88, 83, 83);
+}
+
+footer {
+  height: 5rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
